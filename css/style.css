@@ -248,12 +248,12 @@ main {
   border-left: none;
 }
 
-.Projects > .pBorder2, .Projects > .pBorder3 {
-  border-bottom: none;
+.Projects > .pBorder2 {
+  border-right: none;
 }
 
-.Projects > .pBorder1, .Projects > .pBorder3 {
-  border-right: none;
+.Projects > .pBorder3 {
+  border-bottom: none;
 }
 
 .Projects .img {
@@ -301,10 +301,27 @@ main {
     width: 50%;
   }
 
+  .Projects > .pBorder, .Projects > .pBorder1, .Projects > .pBorder2, .Projects > .pBorder3{
+    border-left: none;
+    border-top: none;
+  }
+
+  .Projects > .pBorder2 {
+    border-right: 1px solid rgb(120,136,157);
+  }
+
+  .Projects > .pBorder3, .Projects > .pBorder2 {
+    border-bottom: none;
+  }
+
+  .Projects > .pBorder3, .Projects > .pBorder1 {
+    border-right: none;
+  }
+
 
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 760px) {
   .prof {
     /* display: flex; */
   }
