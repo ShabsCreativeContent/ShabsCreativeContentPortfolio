@@ -128,8 +128,8 @@ header + section > i {
 }
 
 main {
-  padding-left: 5%;
-  padding-right: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .prof, .prof1, .prof ul, .prof2, .prof2 > section, .Projects {
