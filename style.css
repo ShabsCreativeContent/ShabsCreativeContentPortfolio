@@ -67,7 +67,7 @@ header nav {
   padding-top: 50px;
 }
 
-header nav, .prof, .prof1,  .prof ul, .prof2, .prof2 > section, .Projects, .service, .service + section {
+header nav, .prof, .prof1,  .prof ul, .prof2, .prof2 > section, .service, .service + section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -132,11 +132,11 @@ main {
     padding-right: 5%;
 }
 
-.prof, .prof1, .prof ul, .prof2, .prof2 > section, .Projects {
+.prof, .prof1, .prof ul, .prof2, .prof2 > section{
   flex-direction: row;
 }
 
-.prof, .prof1, .prof2, .prof2 > section, .Projects {
+.prof, .prof1, .prof2, .prof2 > section {
   align-items: center;
   justify-content: space-between;
   flex-flow: wrap;
@@ -144,6 +144,7 @@ main {
 
 .prof {
   border-bottom: 5px solid #c41930;
+  margin-top: 20px;
 }
 
 .prof ul i {
@@ -168,9 +169,10 @@ main {
 .prof1 h1 {
   font-size: 6rem;
   line-height: 60px;
+  margin-bottom: 30px;
 }
 
-.prof1 button, .Projects button {
+.prof1 button {
   background: #fff;
   padding: 15px 40px;
   color: #c41930;
@@ -180,7 +182,7 @@ main {
   cursor: pointer;
 }
 
-.prof1 button:hover, .Projects button:hover {
+.prof1 button:hover{
   background: #c41930;
   color: #fff;
 }
@@ -219,6 +221,7 @@ main {
 .prof2 section {
   width: 47%;
   flex-flow: row;
+  justify-content: flex-start;
   padding-bottom: 20px;
 }
 
@@ -232,34 +235,44 @@ main {
   margin: 0px;
 }
 
-.Projects {
-  justify-content: space-between;
+.Projects img {
+  transition : 0.3s ease all;
+  overflow: hidden;
+  border: 1px solid #c41930;
+  border-radius: 10px;
 }
 
-.Projects > section {
-  /* height: 550px; */
-  width: 33.333%;
-  border: 1px solid rgb(120,136,157);
-  padding: 30px;
+.Projects img:hover {
+  transform: scale(1.1)
 }
 
-.Projects > .pBorder, .Projects > .pBorder1, .Projects > .pBorder2, .Projects > .pBorder3{
-  border-top: none;
-  border-left: none;
+.Projects h2 {
+  margin: 20px 0px;
+  font-size: 25px;
 }
 
-.Projects > .pBorder2 {
-  border-right: none;
+.Projects button{
+  background-color: white;
+  border-style: none;
+  padding: 0px;
+  margin-top: 25px;
+  margin-bottom: 10px;
 }
 
-.Projects > .pBorder3 {
-  border-bottom: none;
+.Projects button a {
+  text-decoration: none;
+  background: #fff;
+  padding: 15px 40px;
+  color: #c41930;
+  border: 1px solid #c41930;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
 }
 
-.Projects .img {
-  height: 200px;
-  width: 100%;
-  background: #eff1f2;
+.Projects button a:hover{
+  color: white;
+  background-color: #c41930;
 }
 
 @media screen and (max-width: 1280px){
@@ -297,35 +310,9 @@ main {
     margin-left: 5%;
   }
 
-  .Projects > section {
-    width: 50%;
-  }
-
-  .Projects > .pBorder, .Projects > .pBorder1, .Projects > .pBorder2, .Projects > .pBorder3{
-    border-left: none;
-    border-top: none;
-  }
-
-  .Projects > .pBorder2 {
-    border-right: 1px solid rgb(120,136,157);
-  }
-
-  .Projects > .pBorder3, .Projects > .pBorder2 {
-    border-bottom: none;
-  }
-
-  .Projects > .pBorder3, .Projects > .pBorder1 {
-    border-right: none;
-  }
-
-
 }
 
 @media screen and (max-width: 760px) {
-  .prof {
-    /* display: flex; */
-  }
-
   .prof1, .padLeft {
     position: relative;
     padding-top: 50px;
@@ -352,18 +339,6 @@ main {
     right: 5%;
   }
 
-  .Projects > section {
-    width: 100%;
-  }
-
-  .Projects > .pBorder, .Projects > .pBorder1, .Projects > .pBorder2, .Projects > .pBorder3{
-    border: none;
-    border-bottom: 1px solid rgb(120,136,157);
-  }
-
-  .Projects > .pBorder3 {
-    border-bottom: none;
-  }
 }
 
 @media screen and (max-width: 465px) {
