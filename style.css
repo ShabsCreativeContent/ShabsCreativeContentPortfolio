@@ -238,7 +238,7 @@ main {
 .Projects img {
   transition : 0.3s ease all;
   overflow: hidden;
-  border: 1px solid #c41930;
+  border: 1px solid rgb(206, 205, 205);
   border-radius: 10px;
 }
 
